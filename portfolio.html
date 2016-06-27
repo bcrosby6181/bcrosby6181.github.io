@@ -92,14 +92,22 @@
                 </li>
                 <li><a href="portfolio.html">Portfolio</a>
                 </li>
+                <li><a href="studies.html">Studies</a></li>
+                </li>
             </ul>
             </nav>
+            <br></br>
 			<main>
             <div class="content">
-                <h1>Portfolio</h1>
-                <ul id="portfolio">
+                <h1 align = "center">Portfolio</h1>
+                <ul align = "center" id="portfolio">
+            <!--<img src="https://pbs.twimg.com/media/CkrcGQLWkAARXKo.jpg"> 
+            <img src="https://pbs.twimg.com/media/CkrcP4OWYAAy90G.jpg">
+            <img src="https://pbs.twimg.com/media/CkrcJk4XAAAHW5B.jpg"> -->
+                
                 </ul>
             </div>
+            
         </main>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
