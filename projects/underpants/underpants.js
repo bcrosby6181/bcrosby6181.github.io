@@ -428,33 +428,10 @@
      http://jsbin.com/bezeve/edit?js,console  USE EACH
     .... 
 
-    _.extend = function(base){
+    
        
 
     };*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // This is the proper way to end a javascript library
 }());
