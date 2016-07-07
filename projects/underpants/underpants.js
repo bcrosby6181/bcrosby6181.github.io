@@ -294,7 +294,11 @@ _.map =  function(obj, iteratee, context) {
     _.pluck = function(obj, key) {
         return _.map(obj, _.each(key));
     };*/
-
+_.pluck = function(obj, key) {
+    return _.map(obj, function(x) {
+        return x[key];
+    });
+};
 
 
     /** _.contains()
@@ -396,18 +400,21 @@ _.map =  function(obj, iteratee, context) {
     * Gotchas:
     *   1) What if <seed> is not given?
     * Examples:
-    *   _.reduce([1,2,3], function(prev, curr){ return prev + curr}) -> 6 
-    _.reduce = function(array, combine, start) {
-        for (var i = 0; i < array.length; i++)
-        var current = start;
-        if (current === undefined){
-            current === array[i];
+    *   _.reduce([1,2,3], function(prev, curr){ return prev + curr}) -> 6 */
+
+   _.reduce = function(array, action, seed) {
+    var prev = seed;
+    for(var i = 0; i < array.length; i++) {
+        if(prev === undefined) {
+            prev = array[0];
+        } else {
+            var next = action(prev, array[i], i);
+            prev = next;
         }
-        current = combine(current, array[0]);
-      return current;
-    };*/
-    
-    
+    }
+    return prev;
+  }  
+
 
 
     /** _.extend()
