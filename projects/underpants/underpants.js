@@ -267,17 +267,17 @@
      *   _.map([1,2,3,4], function(e){return e * 2}) -> [2,4,6,8]
      */
 
-    _.map = function(obj, iteratee, context) {
-        iteratee = _.identity(iteratee, context);
-        var keys = !Array.isArray(obj) && Object.keys(obj),
-            length = (keys || obj).length,
-            results = Array(length);
-        for (var index = 0; index < length; index++) {
-            var currentKey = keys ? keys[index] : index;
-            results[index] = iteratee(obj[currentKey], currentKey, obj);
-        }
-        return results;
-    };
+_.map =  function(obj, iteratee, context) {
+    iteratee = _.identity(iteratee, context);
+    var keys = !Array.isArray(obj) && Object.keys(obj),
+        length = (keys || obj).length,
+        results = Array(length);
+    for (var index = 0; index < length; index++) {
+        var currentKey = keys ? keys[index] : index;
+        results[index] = iteratee(obj[currentKey], currentKey, obj);
+    }
+    return results;
+};
 
 
     /** _.pluck()
@@ -379,7 +379,6 @@
             if (predicate(obj[currentKey], currentKey, obj)) return true;
         }
         return false;
-
     };
     /** _.reduce()
     * Arguments:
@@ -397,17 +396,18 @@
     * Gotchas:
     *   1) What if <seed> is not given?
     * Examples:
-    *   _.reduce([1,2,3], function(prev, curr){ return prev + curr}) -> 6
-
+    *   _.reduce([1,2,3], function(prev, curr){ return prev + curr}) -> 6 
     _.reduce = function(array, combine, start) {
         for (var i = 0; i < array.length; i++)
         var current = start;
         if (current === undefined){
-            current === array[0];
+            current === array[i];
         }
-        current = combine(current, array[i]);
+        current = combine(current, array[0]);
       return current;
-    };
+    };*/
+    
+    
 
 
     /** _.extend()
@@ -424,14 +424,35 @@
     *   _.extend(data, {b:"two"}); -> data now equals {a:"one",b:"two"}
     *   _.extend(data, {a:"two"}); -> data now equals {a:"two"}
     *
-
      http://jsbin.com/bezeve/edit?js,console  USE EACH
     .... 
+    };*/
+    
+    
+_.extend = function(obj){
+    for (var i = 1;i < arguments.length; i++){
+        _.each(arguments[i], function(value,keys,collection){
+            obj[keys] = value;
+        });
+    }
+    return obj;
+};   
+    
+    
 
     
-       
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
-    };*/
+
+
 
     // This is the proper way to end a javascript library
 }());
