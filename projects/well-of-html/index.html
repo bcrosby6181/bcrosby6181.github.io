@@ -1,0 +1,199 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <title>A Well of HTML</title>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- ALL YOUR MARKUP GOES BELOW HERE -->
+
+        <a text-align="center" href="https://en.wikipedia.org/wiki/Michael_Houser">Houser</a>
+        <img src="img/black-currant.jpg" />
+        <h1 align="center">Hello</h1>
+        <h2 align="center">Hello</h2>
+        <h3 align="center">Hello</h3>
+        <h1 align="center"><small>Hello</small></h1>
+        <h4 align="center">Hello</h4>
+        <h5 align="center">Hello</h5>
+        <h6 align="center">Hello</h6>
+
+        <!--Below is an example of using <p></p> tags for paragraphs;
+            <b></b> tags to bold some words;
+            <i></i> tags used to display text in italics;
+            <em></em> tags used to emphasize text; -->
+
+        <p><b>Stephen Edwin King</b> was born in <i>Portland, Maine in 1947,</i> the second son of Donald and Nellie Ruth Pillsbury King. After his parents separated when Stephen was a toddler, he and his older brother, David, were raised by his mother.
+            Parts of his <em>childhood</em> were spent in Fort Wayne, Indiana, where his father's family was at the time, and in <strong>Stratford, Connecticut.</strong> When Stephen was eleven, his mother brought her children back to Durham, Maine, for
+            good. Her parents, Guy and Nellie Pillsbury, had become incapacitated with old age, and Ruth King was persuaded by her sisters to take over the physical care of the elderly couple. Other family members provided a small house in Durham and
+            financial support. After Stephen's grandparents passed away, Mrs. King found work in the kitchens of Pineland, a nearby residential facility for the mentally challenged.</p>
+        <p><b>Stephen</b> attended the grammar school in Durham and then Lisbon Falls High School, graduating in 1966. From his sophomore year at the University of Maine at Orono, he wrote a weekly column for the school newspaper, THE MAINE CAMPUS. He was
+            also active in student politics, serving as a member of the Student Senate. He came to support the anti-war movement on the Orono campus, arriving at his stance from a conservative view that the war in Vietnam was unconstitutional. He graduated
+            from the University of Maine at Orono in 1970, with a B.A. in English and qualified to teach on the high school level. A draft board examination immediately post-graduation found him 4-F on grounds of high blood pressure, limited vision, flat
+            feet, and punctured eardrums.</p>
+        <!--Below is an example of how to make a list using <ul></ul><li></li> tags 
+            Returns a list with bullet points-->
+        <ul>
+            <li>List Item #1</li>
+            <li>List Item #2</li>
+            <li>List Item #3</li>
+            <li>List Item #4</li>
+        </ul>
+
+        <!--Below is an example of how to make a list using <ol></ol><li></li> tags 
+            Returns a numbered list-->
+        <ol>
+            <li>List Item #5</li>
+            <li>List Item #6</li>
+            <li>List Item #7</li>
+            <li>List Item #8</li>
+        </ol>
+
+
+        <!--The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name). -->
+        <dl>
+            <dt>Donomican Republic</dt>
+            <dd>The Dominican Republic is a sovereign state occupying the eastern two thirds of the island of Hispaniola, in the Greater Antilles archipelago in the Caribbean region.</dd>
+            <dt>Portugal</dt>
+            <dd>officially the Portuguese Republic, is a country on the Iberian Peninsula, in Southwestern Europe.</dd>
+        </dl>
+
+        <form class="example-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+            </div>
+            <div>
+                <label for="street address">Street Address:</label>
+                <input type="text" id="street" />
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" />
+            </div>
+
+            <div>
+                <label for="state">State:</label>
+                <input type="text" id="state" />
+
+            </div>
+
+            <div>
+                <label for="zip code">Zip Code:</label>
+                <input type="text" id="text" />
+            </div>
+
+            <div class="button">
+                <button type="submit">Send your information</button>
+            </div>
+        </form>
+        <!--Example of creating a table -->
+
+        <table>
+            <thead>
+                <tr>
+                    <!--the <th></th> tags create headers for the table -->
+                    <th>RO #</th>
+                    <th>Technician</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Customer Concern</th>
+                    <th>Price Quote</th>
+                    <th>Approved / Denied</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+
+            </tfoot>
+            <tbody>
+                <thead>
+                    <tr>
+                        <td>157668</td>
+                        <td>George</td>
+                        <td>Ford</td>
+                        <td>F-150</td>
+                        <td>2014</td>
+                        <td>Brakes Squealing</td>
+                        <td>$129.95</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>157701</td>
+                        <td>Tony</td>
+                        <td>Ford</td>
+                        <td>Pinto</td>
+                        <td>1977</td>
+                        <td>Engine Knocking</td>
+                        <td>$2671.80</td>
+                        <td>Denied</td>
+                    </tr>
+                </thead>
+            </tbody>
+        </table>
+
+
+        <!-- examples of using FLEXBOX -->
+        <div class="flex-row">
+            <div>Department</div>
+            <div>Salesperson</div>
+            <div>Make</div>
+            <div>Model</div>
+            <div>Year</div>
+        </div>
+        <div class="flex-row">
+            <div>Used Car</div>
+            <div>Jimmy Wells</div>
+            <div>Jeep</div>
+            <div>Wrangler</div>
+            <div>2015</div>
+        </div>
+        <div class="flex-row">
+            <div>New Car</div>
+            <div>David Mitchell</div>
+            <div>Ford</div>
+            <div>Mustang</div>
+            <div>2016</div>
+        </div>
+
+
+        <div class="example-grid">
+            <div class="row">
+                <div class="col-md-2"><img src="../img/cherries.jpg" class="row-img"></img>
+                </div>
+                <div class="col-md-10">Cherries are tasty things that grow on trees! You can eat them and feel good about yourself!</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><img src="../img/black-currant.jpg" class="row-img"></img>
+                </div>
+                <div class="col-md-10">Black Currents are tasty things that grow on bushes! You can eat them and feel good about yourself!</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><img src="../img/apple-in-grass.jpg" class="row-img"></img>
+                </div>
+                <div class="col-md-10">Apples are tasty things that grow on trees! You can eat them and feel good about yourself! They make great pies!</div>
+            </div>
+        </div>
+        
+        <!-- ALL YOUR MARKUP GOES ABOVE HERE -->
+    </div>
+    <script>
+        $(function() {
+            // uncomment this for directions button to pop up
+            //window.opspark.notes.show();
+        });
+    </script>
+</body>
+
+</html>

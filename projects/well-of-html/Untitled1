@@ -1,0 +1,13 @@
+var tbl = $("<table/>").attr("id", "mytable");
+               $("#list-items").append(tbl);
+               for (var i = 0; i < obj.length; i++) {
+                    var tr = "<tr>";
+                    //var td1 = "<td>" + obj[i]["id"] + "</td>";
+                    var td2 = "<td>" + obj[i]["desc"] + "</td>";
+                    var td3 = "<td>" + "$" + obj[i]["price"] + "</td>";
+                    //var td4 = "<td>" + obj[i]["image"] + "</td>";
+                    var td5 = "<td>" + obj[i]["color"] + "</td>";
+                    //var td6 = "<td>" + obj[i]["availableColors"] + "</td>";
+                    $("#items").append(tr + td2 + td3 + td5); 
+                   
+               }
