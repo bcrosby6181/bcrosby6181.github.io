@@ -1,6 +1,6 @@
 
             body {
-                background: rgb(198, 212, 225);
+                background: rgb(143, 22, 178);
                 color: rgb(45, 45, 45);
                 padding: 10px;
                 font-family: arial;
@@ -16,7 +16,7 @@
 
             /* navigation menu */
             nav {
-                background: rgb(189, 184, 173);
+                background: rgb(7, 185, 252);
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
@@ -44,7 +44,7 @@
 
             /* main container area beneath menu */
             main {
-                background: rgb(255, 255, 255);
+                background: rgb(255, 192, 0);
                 display: flex;
                 border: 2px solid;
                 border-radius: 5px;
@@ -73,4 +73,49 @@
    max-width:770px;
    overflow:auto;
 }
+@font-face {
+                font-family: myFirstFont;
+                src: url(Millennia.otf);
+                font-weight: bold;
+            }
+
+            h1{
+                font-family:myFirstFont;
+                color: rgb(236, 65, 144);
+                font-size : 46px;
+            }
+            h2{
+                font-family:myFirstFont;
+                color: rgb(86, 104, 238);
+                font-size : 36px;
+            }
+            
+            h3{
+                font-family:myFirstFont;
+                color: rgb(249, 108,52);
+                font-size : 31px;
+            }
+            
+            
+            
+            p{
+                font-family:myFirstFont;
+                color: rgb(102, 185, 53);
+                font-size : 26px;
+            }
+			a{
+                font-family:myFirstFont;
+                color: rgb(102, 185, 53);
+                font-size : 18px;
+            }
+            header{
+                font-family:myFirstFont;
+                color: rgb(102, 185, 53);
+                font-size : 18px;
+            }
+            li{
+                font-family:myFirstFont;
+                color: rgb(102, 185, 53);
+                font-size : 18px;
+            }
 
